@@ -43,7 +43,7 @@ print(cleanPerson)
 
 > StartMonth | StartYear | EndMonth | EndYear | TotalMonths | Employer | Role
 > --- | --- | --- | --- | --- | --- | ---
-> 2 | 2016 | nan | nan | 62 | Technical Support Manager (Executive Officer) | Department for Work and Pensions (DWP)
+> 2 | 2016 | nan | nan | 62 | Technical Support Manager | Department for Work and Pensions
 > 11 | 2014 | 2 | 2016 | 15 | Specialist | Apple
 
 `glassdoor_scraper.py` scrapes profile via the Salary() function
