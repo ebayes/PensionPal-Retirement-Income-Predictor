@@ -31,6 +31,8 @@ import Calendar from "vue2-baremetrics-calendar";
 Vue.config.productionTip = false;
 ```
 
+> 32
+
 `data_clean.py'
 
 `glassdoor_scraper.py` scrapes profile via the scrape() function
