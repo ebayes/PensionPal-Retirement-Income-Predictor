@@ -31,7 +31,17 @@ import Calendar from "vue2-baremetrics-calendar";
 Vue.config.productionTip = false;
 ```
 
-> 32
+ 
+StartDate | EndDate | Employer | Role
+--- | --- | --- | ---
+Mar 2017 | Aug 2019 | Senior Policy Adviser (Fast Stream) | Greater London Authority
+Apr 2015 | Mar 2017 | Policy Adviser (Fast Stream) | HM Treasury
+
+> StartDate | EndDate | Employer | Role
+> --- | --- | --- | ---
+> Mar 2017 | Aug 2019 | Senior Policy Adviser (Fast Stream) | Greater London Authority
+> Apr 2015 | Mar 2017 | Policy Adviser (Fast Stream) | HM Treasury
+
 
 `data_clean.py'
 
