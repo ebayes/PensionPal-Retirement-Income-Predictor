@@ -23,7 +23,7 @@ Running `python setup.py install` installs packages, which include:
 `linkedin_scraper.py` scrapes profile via the Person() function
 
 ```py
-from linkedin_scraper import Person
+from linkedin_scraper import person
 person = Person("https://www.linkedin.com/in/anonymous_user/")
 print(person)
 ```
@@ -49,7 +49,7 @@ print(cleanPerson)
 `glassdoor_scraper.py` scrapes profile via the Salary() function
 
 ```py
-from glassdoor_scraper import Salary
+from glassdoor_scraper import salary
 salary = Salary(cleanPerson)
 print(salary)
 ```
@@ -62,7 +62,7 @@ print(salary)
 `pension_predictor.py` predicts size of pension pot via the PredictPast() function and retirement income via the PredictFuture() function
 
 ```py
-from pension_predictor import past and future
+from pension_predictor import past, future
 pensionpots = PredictPast(salary)
 futurepension = PredictFuture(pensionpots)
 print(futurepensions)
