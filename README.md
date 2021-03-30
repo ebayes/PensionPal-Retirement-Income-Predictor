@@ -24,7 +24,7 @@ Running `python setup.py install` installs packages, which include:
 
 ```py
 from linkedin_scraper import Person
-person = Person("https://www.linkedin.com/in/edbayes/")
+person = Person("https://www.linkedin.com/in/anonymous_user/")
 print(person)
 ```
 
