@@ -3,7 +3,7 @@
 
 ## Introduction
 
-`pensionpal` is a tool that predicts an individual's future retirement income based on publicly available employment and salary data from LinkedIn and Glassdoor. The backend is built in python 🐍 and the UI is built in Javascript and CSML 🤖 (open source chatbot platform).
+`pensionpal` is a tool that predicts an individual's future retirement income based on publicly available employment and salary data from LinkedIn and Glassdoor. The backend is built in python 🐍 and the UI is mocked up using Figma and built in CSML 🤖 (open source chatbot language).
 
 ## How PensionPal works
 
