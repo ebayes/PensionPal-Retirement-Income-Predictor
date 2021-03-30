@@ -12,7 +12,7 @@
 Running `python setup.py install` installs packages, which include:
 - ✂️ **`linkedin_scraper.py`** - scrapes users LinkedIn profile and exports to a .csv file
 - 🧼 **`data_clean.py`** - cleans .csv file and formats for data analysis
-- 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and accounts for salary growth and inflation etc
+- 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and makes adjustments
 - 🧮 **`pension_predictor.py`** - calculates size of current pension pots (401ks) based on % of income set out in UK government's auto enrolment legislation and projects values into the future
 - 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future pension (401k) contributions based on comparable career trajectories on LinkedIn  # work in progress
 
@@ -46,7 +46,7 @@ print(cleanPerson)
 > 2 | 2016 | nan | nan | 62 | Technical Support Manager | Department for Work and Pensions
 > 11 | 2014 | 2 | 2016 | 15 | Specialist | Apple
 
-`glassdoor_scraper.py` scrapes profile via the Salary() function
+`glassdoor_scraper.py` scrapes profile via the Salary() function and makes adjustments for salary growth and inflation.
 
 ```py
 from glassdoor_scraper import salary
