@@ -73,9 +73,9 @@ print(futurepensions)
 
 ## 🥊 Comparing predicted vs real projections
 
-Working with real users (n=14), we have been able to validate the model, and early results show a high level of accuracy.
+Working with real users (**n=14**), we have been able to validate the model by tracking down peoples pensions and comparing real figures to predicted ones product by our model. Early results show a high level of accuracy.
 
-Using the worked example above, real 🆚 predicted outcomes can be compared.
+Using the worked example above, real  🆚  predicted outcomes can be compared.
 
 ExamplePredicted | ExampleReal | MedianPredicted | AverageReal
 --- | --- | --- | ---
