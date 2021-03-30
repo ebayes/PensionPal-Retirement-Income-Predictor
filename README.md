@@ -85,11 +85,11 @@ ExamplePredicted | ExampleReal | MedianPredicted | AverageReal
 
 `pensionpal` is integrated with a chatbot interface, built using open source platform CSML.
 
-[INSERT chatbot mock up]
+<img src="./pictures/csml.png" width="100%">
 
 
 ## 💻 Web hosting
 
 The next stage of the prototype is to integrate the front and backend together.
 
-[INSERT figma mock up]
+<img src="./pictures/figma.png" width="100%">
