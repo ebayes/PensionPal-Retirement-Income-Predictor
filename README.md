@@ -5,9 +5,7 @@
 
 `pensionpal` is a tool that predicts an individual's future retirement income based on publicly available employment and salary data from LinkedIn and Glassdoor. On the backend it is a python 🐍 package and on the frontend it has a simple chatbot 🤖 interface.
 
-## Usage Example
-
-### How PensionPal works
+## How PensionPal works
 
 Running `python setup.py install` installs packages, which include:
 - ✂️ **`linkedin_scraper.py`** - scrapes users LinkedIn profile and exports to a .csv file
@@ -16,7 +14,7 @@ Running `python setup.py install` installs packages, which include:
 - 🧮 **`pension_predictor.py`** - calculates size of current pension pots (401ks) based on % of income set out in UK government's auto enrolment legislation and projects values into the future
 - 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future pension (401k) contributions based on comparable career trajectories on LinkedIn  # work in progress
 
-### A worked example
+## A worked example
 
 *The following example contains real data from an anonymised source.*
 
@@ -59,7 +57,7 @@ print(salary)
 > 0 | ... | 26,350 | 26,350
 > 1 | ... | 21,148 | 18,359
 
-`pension_predictor.py` predicts size of pension pot via the PredictPast() function and retirement income via the PredictFuture() function
+`pension_predictor.py` predicts the present value of the user's pension pot via the PredictPast() function, and the future value (at the point of retirement) and retirement income using via the PredictFuture() function
 
 ```py
 from pension_predictor import past, future
@@ -73,7 +71,7 @@ print(futurepensions)
 > 0 | ... | 1035.26 | 4235 | 177.70
 > 1 | ... | nan | nan | 3677
 
-### 🥊 Comparing predicted vs real projections
+## 🥊 Comparing predicted vs real projections
 
 Working with real users (n=14), we have been able to validate the model, and early results show a high level of accuracy.
 
