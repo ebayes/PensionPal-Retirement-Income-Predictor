@@ -11,8 +11,8 @@ Running `python setup.py install` installs packages, which include:
 - ✂️ **`linkedin_scraper.py`** - scrapes users LinkedIn profile and exports to a .csv file
 - 🧼 **`data_clean.py`** - cleans .csv file and formats for data analysis
 - 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and makes adjustments
-- 🧮 **`pension_predictor.py`** - calculates size of current pension pots (401ks) based on % of income set out in UK government's auto enrolment legislation and projects values into the future
-- 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future pension (401k) contributions based on comparable career trajectories on LinkedIn  # work in progress
+- 🧮 **`pot_predictor.py`** - calculates size of current retirement pots and projects values into the future
+- 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future retirement pot contributions based on comparable career trajectories on LinkedIn  # work in progress
 
 ## A worked example
 
@@ -57,13 +57,13 @@ print(salary)
 > 0 | ... | 26,350 | 26,350
 > 1 | ... | 21,148 | 18,359
 
-`pension_predictor.py` predicts the present value of the user's pension pot via the PredictPast() function, and the future value (at the point of retirement) and retirement income using via the PredictFuture() function
+`pot_predictor.py` predicts the present value of the user's retirement pots via the PredictPast() function, and the future value (at the point of retirement) and retirement income using via the PredictFuture() function
 
 ```py
-from pension_predictor import past, future
-pensionpots = PredictPast(salary)
-futurepension = PredictFuture(pensionpots)
-print(futurepensions)
+from pot_predictor import past, future
+retirementpots = PredictPast(salary)
+futurepots = PredictFuture(retirementpots)
+print(futurepots)
 ```
 
 > No | ... | PotPrediction | PotPredictionEnd | RetirementIncome
@@ -73,7 +73,7 @@ print(futurepensions)
 
 ## 🥊 Comparing predicted vs real projections
 
-Working with real users (**n=14**), we have been able to validate the model by tracking down peoples pensions and comparing real figures to predicted ones product by our model. Early results show a high level of accuracy.
+Working with real users (**n=14**), we have been able to validate the model by tracking down peoples retirement pots and comparing real figures to predicted ones produced by our model. Early results show a high level of accuracy.
 
 Using the worked example above, real  🆚  predicted outcomes can be compared.
 
