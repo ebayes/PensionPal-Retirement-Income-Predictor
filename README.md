@@ -33,7 +33,7 @@ print(person)
 > Feb 2016 | Present | Technical Support Manager (Executive Officer) | Department for Work and Pensions (DWP)
 > Nov 2014 | Feb 2016 | Specialist | Apple
 
-`data_clean.py' uses `numpy' to format the data into a format for analysis via the Clean() function
+`data_clean.py' uses `numpy` to format the data into a format for analysis via the Clean() function
 
 ```py
 import numpy as np
@@ -46,7 +46,7 @@ print(cleanPerson)
 > 2 | 2016 | nan | nan | 62 | Technical Support Manager (Executive Officer) | Department for Work and Pensions (DWP)
 > 11 | 2014 | 2 | 2016 | 15 | Specialist | Apple
 
-`glassdoor_scraper.py` scrapes profile via the scrape() function
+`glassdoor_scraper.py` scrapes profile via the Salary() function
 
 ```py
 from glassdoor_scraper import Salary
@@ -54,10 +54,10 @@ salary = Salary(cleanPerson)
 print(salary)
 ```
 
-> No | ... | Salary
-> --- | --- | --- 
-> 0 | ... | 
-> 1 | ... |  
+> No | ... | Salary | SalaryAdjusted
+> --- | --- | --- | ---
+> 0 | ... | 26,350 | 26,350
+> 1 | ... | 21,148 | 18,359
 
 `pension_predictor.py` predicts size of pension pot via the PredictPast() function and retirement income via the PredictFuture() function
 
