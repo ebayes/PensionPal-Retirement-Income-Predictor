@@ -13,48 +13,63 @@ Running `python setup.py install` installs packages, which include:
 - ✂️ **`linkedin_scraper.py`** - scrapes users LinkedIn profile and exports to a .csv file
 - 🧼 **`data_clean.py`** - cleans .csv file and formats for data analysis purposes
 - 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and accounts for salary growth and inflation etc
-- 🧮 **`pension_predictor_past.py`** - calculates size of current pension pots (401ks) based on % of income set out in UK government's auto enrolment legislation
-- 🔮 **`pension_predictor_future.py`** - uses Markov Chains to predict future pension (401k) contributions based on comparable career trajectories on LinkedIn  # work in progress
+- 🧮 **`pension_predictor.py`** - calculates size of current pension pots (401ks) based on % of income set out in UK government's auto enrolment legislation and projects values into the future
+- 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future pension (401k) contributions based on comparable career trajectories on LinkedIn  # work in progress
 
 ### A worked example
 
-`linkedin_scraper.py` scrapes profile via the scrape() function
+`linkedin_scraper.py` scrapes profile via the Person() function
 
-```js
-// main.js
-import Vue from "vue";
-import App from "./App.vue";
-import router from "./router";
-// import the plugin
-import Calendar from "vue2-baremetrics-calendar";
-
-Vue.config.productionTip = false;
+```py
+from linkedin_scraper import Person
+person = Person("https://www.linkedin.com/in/edbayes/")
+print(person)
 ```
-
- 
-StartDate | EndDate | Employer | Role
---- | --- | --- | ---
-Mar 2017 | Aug 2019 | Senior Policy Adviser (Fast Stream) | Greater London Authority
-Apr 2015 | Mar 2017 | Policy Adviser (Fast Stream) | HM Treasury
 
 > StartDate | EndDate | Employer | Role
 > --- | --- | --- | ---
-> Mar 2017 | Aug 2019 | Senior Policy Adviser (Fast Stream) | Greater London Authority
+> Mar 2017 | Aug 2019 | Senior Policy Adviser | Greater London Authority
 > Apr 2015 | Mar 2017 | Policy Adviser (Fast Stream) | HM Treasury
 
+`data_clean.py' uses `numpy' to format the data into a format for analysis via the Clean() function
 
-`data_clean.py'
+```py
+import numpy as np
+cleanPerson = Clean(person)
+print(cleanPerson)
+```
+
+> StartMonth | StartYear | EndMonth | EndYear | TotalMonths | Employer | Role
+> --- | --- | --- | ---
+> 3 | 2017 | 8 | 2019 | 17 | Senior Policy Adviser | Greater London Authority
+> 4 | 2015 | 3 | 2017 | 23 | Policy Adviser | HM Treasury
 
 `glassdoor_scraper.py` scrapes profile via the scrape() function
 
-`data_clean.py` formats profile data into editable file
+```py
+from glassdoor_scraper import Salary
+salary = Salary(cleanPerson)
+print(salary)
+```
 
-`glassdoor_scraper.py`
+> No | ... | Salary
+> --- | --- | --- 
+> 0 | ... | 
+> 1 | ... |  
 
-`pension_predictor_past.py`
+`pension_predictor.py` predicts size of pension pot via the PredictPast() function and retirement income via the PredictFuture() function
 
-`pension_predictor_future.py`
+```py
+from pension_predictor import past and future
+pensionpots = PredictPast(salary)
+futurepension = PredictFuture(pensionpots)
+print(futurepensions)
+```
 
+> No | ... | PotPrediction | RetirementIncome
+> --- | --- | --- | ---
+> 0 | ... | x | x
+> 1 | ... | x | x
 
 
 ### Chatbot
