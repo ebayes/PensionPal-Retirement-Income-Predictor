@@ -90,6 +90,6 @@ ExamplePredicted | ExampleReal | MedianPredicted | AverageReal
 
 ## 💻 Web hosting
 
-The next stage of the prototype is to integrate the front and backend together.
+A mock up of frontend and backend integrated together is shown below, with social integration to access user data more efficiently.
 
 <img src="./pictures/figma.png" width="100%">
