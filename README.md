@@ -73,12 +73,21 @@ print(futurepensions)
 > 0 | ... | 1035.26 | 4235 | 177.70
 > 1 | ... | nan | nan | 3677
 
+### Comparing predicted vs real projections
 
-### Chatbot
+Working with real users (n=14), we have been able to validate the model and early results show a high level of accuracy.
 
-`pensionpal` is integrated with a chatbot interface .
+For example, using the worked example above, retirement income levels can be compared.
 
+ExamplePredicted | ExampleReal | MedianPredicted | AverageReal
+--- | --- | --- | ---
+3,855 | 3,222 | 4,604 | 2579
 
-### Contribution
+## Chatbot
 
-Feel free to contribute. Just open an issue to discuss something before creating a PR.
+`pensionpal` is integrated with a chatbot interface, built using open source platform CSML.
+
+## Hosting
+
+The elements are integrated together.
+
