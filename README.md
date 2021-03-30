@@ -31,7 +31,7 @@ print(person)
 > Feb 2016 | Present | Technical Support Manager (Executive Officer) | Department for Work and Pensions (DWP)
 > Nov 2014 | Feb 2016 | Specialist | Apple
 
-`data_clean.py' uses `numpy` to format the data into a format for analysis via the Clean() function
+`data_clean.py` uses `numpy` to format the data into a format for analysis via the Clean() function
 
 ```py
 import numpy as np
