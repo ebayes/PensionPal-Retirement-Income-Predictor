@@ -10,7 +10,7 @@
 Running `python setup.py install` installs packages, which include:
 - ✂️ **`linkedin_scraper.py`** - scrapes users LinkedIn profile and exports to a .csv file
 - 🧼 **`data_clean.py`** - cleans .csv file and formats for data analysis
-- 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and makes adjustments
+- 🤑 **`glassdoor_scraper.py`** - cross-references employment data from LinkedIn in .csv file and makes adjustments to account for salary growth etc
 - 🧮 **`pot_predictor.py`** - calculates size of current retirement pots and projects values into the future
 - 🔮 **`glassdoor_compare.py`** - uses Markov Chains to predict future retirement pot contributions based on comparable career trajectories on LinkedIn  # work in progress
 
